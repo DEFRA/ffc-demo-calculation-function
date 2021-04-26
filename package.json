@@ -1,7 +1,7 @@
 {
   "name": "ffc-demo-calculation-function",
   "version": "1.0.0",
-  "description": "",
+  "description": "Digital service mock to claim public money in the event property subsides into mine shaft.",
   "scripts": {
     "start": "func start",
     "pretest": "npm run test:lint",

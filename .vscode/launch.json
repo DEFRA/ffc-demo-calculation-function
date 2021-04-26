@@ -8,5 +8,8 @@
       "port": 9229,
       "preLaunchTask": "func: host start"
     }
-  ]
+  ],
+  "node": {
+    "runtimeVersion": "14.8.0"
+  }
 }
