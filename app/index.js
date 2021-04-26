@@ -6,11 +6,11 @@ module.exports = async function (context, message) {
   try {
     const claim = message.body
     if (claim.claimId !== undefined) {
-      const value = calculationService.calculate(claim)
+      const value = calculationService.calculate(context, claim)
       await sendCalculation(context, { claimId: claim.claimId, value })
       await protectiveMonitoringSendEvent(claim.claimId, 'Claim calculated')
     }
   } catch (err) {
-    console.error('Unable to process message:', err)
+    context.log('Unable to process message:', err)
   }
 }

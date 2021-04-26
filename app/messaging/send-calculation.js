@@ -5,7 +5,7 @@ async function sendCalculation (context, payment) {
   const message = createMessage(payment)
   context.bindings.outputSbQueue = message
   await protectiveMonitoringSendEvent(payment.claimId, 'Send calculation message')
-  console.info(`Published payment for ${payment.claimId}`)
+  context.log(`Published payment for ${payment.claimId}`)
   context.done()
 }
 
