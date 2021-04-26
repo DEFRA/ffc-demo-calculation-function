@@ -1,4 +1,5 @@
 const service = require('../../app/services/calculation-service')
+const mockContext = require('../mock-context')
 
 describe('calculation service', () => {
   test('total is gross minus net1 minus net 2, to two decimal places', () => {
@@ -12,7 +13,7 @@ describe('calculation service', () => {
       email: 'test@email.com'
     }
 
-    const result = service.calculate(claim)
+    const result = service.calculate(mockContext, claim)
     expect(result).toEqual(190.96)
   })
 })

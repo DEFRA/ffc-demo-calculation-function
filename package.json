@@ -4,7 +4,12 @@
   "description": "",
   "scripts": {
     "start": "func start",
-    "test": "jest"
+    "pretest": "npm run test:lint",
+    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch app/index.js",
+    "test": "npm run test:unit",
+    "test:lint": "standard",
+    "test:unit": "jest --runInBand --forceExit",
+    "test:watch": "jest --coverage=false --onlyChanged --runInBand --watch"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
