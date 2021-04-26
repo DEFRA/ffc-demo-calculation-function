@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  ffc-demo-calculation-function:
+    build:
+      context: .
+      target: production
+    image: ffc-demo-calculation-function
+    container_name: ffc-demo-calculation-function
+    environment:
+      PROTECTIVE_MONITORING_URL: ${PROTECTIVE_MONITORING_URL}

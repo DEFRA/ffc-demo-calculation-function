@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "message",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "ffc-demo-calculation-jw",
+      "connection": "serviceBusConnection"
+    },
+    {
+      "name": "outputSbQueue",
+      "type": "serviceBus",
+      "topicName": "ffc-demo-payment-jw",
+      "connection": "serviceBusConnection",
+      "direction": "out"
+    }
+  ]
+}

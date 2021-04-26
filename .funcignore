@@ -5,3 +5,9 @@
 local.settings.json
 test
 tsconfig.json
+README.md
+jest*
+LICENSE
+scripts
+node_modules
+test-output

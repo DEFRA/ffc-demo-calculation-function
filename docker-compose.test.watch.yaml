@@ -1,0 +1,6 @@
+version: '3.7'
+
+services:
+  ffc-demo-calculation-function:
+    command: >
+      sh -c "npm run test:watch"

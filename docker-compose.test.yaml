@@ -1,0 +1,17 @@
+version: '3.7'
+
+# This override file should be used when running automated tests so
+# that test output is saved to the host
+
+services:
+  ffc-demo-calculation-function:
+    build:
+      context: .
+      target: development
+    command: npm run test
+    volumes:
+      - ./app/:/home/node/app/
+      - ./test/:/home/node/test/
+      - ./test-output/:/home/node/test-output/
+      - ./jest.config.js:/home/node/jest.config.js
+      - ./jest.setup.js:/home/node/jest.setup.js
