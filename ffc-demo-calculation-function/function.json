@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "mySbMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "ffc-demo-calculation",
+      "connection": "johnwatson484_SERVICEBUS"
+    }
+  ]
+}
