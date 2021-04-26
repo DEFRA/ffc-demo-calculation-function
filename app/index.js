@@ -11,6 +11,6 @@ module.exports = async function (context, message) {
       await protectiveMonitoringSendEvent(claim.claimId, 'Claim calculated')
     }
   } catch (err) {
-    context.log('Unable to process message:', err)
+    context.log.error('Unable to process message:', err)
   }
 }
