@@ -10,7 +10,7 @@ services:
       target: development
     command: npm run start:watch
     ports:
-      - "9233:9229"
+      - "9234:9229"
     volumes:
     - ./app/:/home/node/app/
     - ./test/:/home/node/test/
