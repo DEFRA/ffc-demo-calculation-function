@@ -21,3 +21,5 @@ README.md
 jsconfig.json
 .vscode
 .gitignore
+Jenkinsfile
+sonar-project.properties
