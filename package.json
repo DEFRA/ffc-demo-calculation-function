@@ -5,7 +5,6 @@
   "scripts": {
     "start": "func start",
     "pretest": "npm run test:lint",
-    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch app/index.js",
     "test": "npm run test:unit",
     "test:lint": "standard",
     "test:unit": "jest --runInBand",
