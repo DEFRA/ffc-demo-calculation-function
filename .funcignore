@@ -7,7 +7,6 @@ jest*
 LICENSE
 scripts
 test-output
-node_modules
 npm-debug.log
 Dockerfile
 .dockerignore
