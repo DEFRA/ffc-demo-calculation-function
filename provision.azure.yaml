@@ -4,4 +4,4 @@ resources:
   topics:
     - name: payment
   storage:
-    - name: testing123
+    - name: democalculationfunction
