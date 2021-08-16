@@ -3,3 +3,5 @@ resources:
     - name: calculation
   topics:
     - name: payment
+  storage:
+    - name: testing123
