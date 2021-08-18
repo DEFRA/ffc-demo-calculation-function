@@ -5,13 +5,13 @@
       "type": "serviceBusTrigger",
       "direction": "in",
       "queueName": "%queueName%",
-      "connection": "serviceBusConnection"
+      "connection": "AzureWebJobsAzureSBConnection"
     },
     {
       "name": "outputSbQueue",
       "type": "serviceBus",
       "topicName": "%topicName%",
-      "connection": "serviceBusConnection",
+      "connection": "AzureWebJobsAzureSBConnection",
       "direction": "out"
     }
   ]
