@@ -4,14 +4,14 @@
       "name": "message",
       "type": "serviceBusTrigger",
       "direction": "in",
-      "queueName": "ffc-demo-calculation-jw",
-      "connection": "serviceBusConnection"
+      "queueName": "%queueName%",
+      "connection": "AzureWebJobsAzureSBConnection"
     },
     {
       "name": "outputSbQueue",
       "type": "serviceBus",
-      "topicName": "ffc-demo-payment-jw",
-      "connection": "serviceBusConnection",
+      "topicName": "%topicName%",
+      "connection": "AzureWebJobsAzureSBConnection",
       "direction": "out"
     }
   ]
