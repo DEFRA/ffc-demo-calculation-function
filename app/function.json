@@ -4,13 +4,13 @@
       "name": "message",
       "type": "serviceBusTrigger",
       "direction": "in",
-      "queueName": "ffc-demo-calculation-sd",
+      "queueName": "%queueName%",
       "connection": "serviceBusConnection"
     },
     {
       "name": "outputSbQueue",
       "type": "serviceBus",
-      "topicName": "ffc-demo-payment-sd",
+      "topicName": "%topicName%",
       "connection": "serviceBusConnection",
       "direction": "out"
     }
