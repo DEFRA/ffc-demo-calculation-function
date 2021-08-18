@@ -1,3 +1,3 @@
 @Library('defra-library@psd-1273-spike-function') _
 
-buildNodeJsFunction()
+buildNodeJsFunction defaultBranch: 'psd-1273-spike-function'
