@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "ffc-protective-monitoring": "^1.0.0"
+    "ffc-protective-monitoring": "^1.0.4"
   },
   "devDependencies": {
     "@azure/service-bus": "^7.0.5",
